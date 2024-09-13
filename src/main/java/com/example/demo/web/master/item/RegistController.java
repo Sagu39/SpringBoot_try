@@ -25,3 +25,4 @@ public class RegistController {
         
         return "master/item/confirm";
     }
+}
