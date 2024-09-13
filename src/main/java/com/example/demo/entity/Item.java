@@ -1,6 +1,6 @@
 package com.example.demo.entity;
 
-inport lombok.Data;
+import lombok.Data;
 
 @Data
 public class Item {
