@@ -25,4 +25,18 @@ public class RegistController {
         
         return "master/item/confirm";
     }
+
+    @PostMapping("master/item/regist/regist")
+    public String regist(ItemForm form) {
+        Item item = form.ToItem();
+        itemRegistService.regist(item);
+
+        return "redirect:master/item/regist/complete";
+    }
+
+    @GetMapping("/master/item/regist/complete")
+    public String complete() {
+
+        return "master/item/complete";
+    }
 }
