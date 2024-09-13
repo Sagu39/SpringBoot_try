@@ -26,7 +26,7 @@ public class RegistController {
         return "master/item/confirm";
     }
 
-    @PostMapping("master/item/regist/regist")
+    @PostMapping("/master/item/regist/regist")
     public String regist(ItemForm form) {
         Item item = form.toItem();
         itemRegistService.regist(item);
