@@ -28,7 +28,7 @@ public class RegistController {
 
     @PostMapping("master/item/regist/regist")
     public String regist(ItemForm form) {
-        Item item = form.ToItem();
+        Item item = form.toItem();
         itemRegistService.regist(item);
 
         return "redirect:master/item/regist/complete";
